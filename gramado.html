@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Gramado - Natal pelo Mundo</title>
+
+<link rel="stylesheet" href="estilo.css">
+
+<style>
+.lista-pontos {
+    font-size: 20px;
+    line-height: 1.8;
+    background-color: #072912;
+    padding: 20px 40px;
+    border-radius: 8px;
+}
+
+#btn-voltar {
+    display: inline-block;
+    background-color: white;
+    color: #8b0000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="cabecalho">
+    <h1 style="font-style: italic; font-size: 50px; text-align: center; color: #8b0000;">
+        Gramado - Brasil
+    </h1>
+</div>
+
+<div style="text-align: center; margin: 40px;">
+    <img src="gramado.jpg" alt="Natal Luz em Gramado">
+</div>
+
+<h2 class="titulo-secao">
+    A Capital do Natal na América do Sul
+</h2>
+
+<p class="texto-historia">
+    Localizada na Serra Gaúcha, no Rio Grande do Sul, Gramado é o principal destino natalino do Brasil e da América do Sul. Como dezembro marca o início do verão brasileiro, a cidade não tem neve natural, mas compensa com um clima ameno muito agradável para caminhadas noturnas e uma decoração grandiosa por todas as avenidas.
+</p>
+
+<h2 class="titulo-secao">
+    Principais Pontos Turísticos
+</h2>
+
+<ul class="lista-pontos">
+    <li><b>Natal Luz de Gramado:</b> O maior evento natalino do país, com desfiles temáticos, shows musicais, fogos de artifício e teatro ao ar livre.</li>
+    <li><b>Rua Coberta:</b> Ponto de encontro no centro da cidade, totalmente enfeitado com guirlandas, laços e luzes suspensas sobre restaurantes e cafés.</li>
+    <li><b>Vila de Natal e Casa do Papai Noel:</b> Espaço montado na Praça das Etnias com artesãos locais e recepção ao Bom Velhinho.</li>
+    <li><b>Lago Negro e Avenida Borges de Medeiros:</b> Cartões-postais que recebem árvores iluminadas e o tradicional show de acendimento das luzes todas as noites.</li>
+</ul>
+
+<div style="margin-top: 30px;">
+    <button class="botao-acao" onclick="mostrarEventoGramado()">Ver duração do Natal Luz</button>
+    <p id="evento-gramado" style="font-size: 20px; color: #ffd700; font-weight: bold; margin-top: 15px;"></p>
+</div>
+
+<a id="btn-voltar" href="index.html">VOLTAR PARA A PÁGINA INICIAL</a>
+
+<div id="rodape">
+    <p>Projeto Desenvolvimento Web - Destino: Gramado, Brasil</p>
+</div>
+
+<script>
+function mostrarEventoGramado() {
+    document.getElementById("evento-gramado").innerHTML = "O Natal Luz de Gramado é tão grande que costuma durar quase 3 meses, começando no fim de outubro e indo até janeiro!";
+}
+</script>
+
+</body>
+</html>

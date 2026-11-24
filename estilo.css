@@ -1,0 +1,74 @@
+/* Seletor por TAG */
+body {
+    background-color: #0b3d1b;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+
+    background-color: #0b3d1b;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-image: 
+        radial-gradient(white 2px, transparent 3px),
+        radial-gradient(white 3px, transparent 4px),
+        radial-gradient(rgba(255, 255, 255, 0.7) 2px, transparent 3px);
+    background-size: 350px 350px, 250px 250px, 150px 150px;
+    animation: nevar 10s linear infinite;
+}
+
+@keyframes nevar {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+    100% {
+        background-position: 350px 350px, 250px 250px, 150px 150px;
+    }
+
+}
+
+img {
+    width: 500px;
+    border: 4px solid white;
+    border-radius: 10px;
+}
+
+/* Seletor por ID */
+#cabecalho {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#rodape {
+    margin-top: 60px;
+    padding: 15px;
+    background-color: #8b0000;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Seletor por CLASSE */
+.titulo-secao {
+    text-decoration: underline;
+    font-size: 35px;
+    margin-top: 30px;
+}
+
+.texto-historia {
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.botao-acao {
+    background-color: #d4af37;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+

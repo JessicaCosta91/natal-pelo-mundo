@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Buscar CEP - Natal pelo Mundo</title>
+
+<link rel="stylesheet" href="estilo.css">
+
+<style>
+.caixa-api {
+    background-color: #072912;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+#btn-voltar {
+    display: inline-block;
+    background-color: white;
+    color: #8b0000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="cabecalho">
+    <h1 style="font-style: italic; font-size: 50px; text-align: center; color: #8b0000;">
+        Buscar CEP
+    </h1>
+</div>
+
+<h2 class="titulo-secao">
+    Consulte o CEP do seu Hotel no Brasil
+</h2>
+
+<div class="caixa-api">
+    <p>Digite o CEP (8 números):</p>
+    <input type="text" id="cep" style="padding: 10px; font-size: 18px;" placeholder="Ex: 83301000">
+    <button type="button" class="botao-acao" onclick="buscarCep()">Buscar</button>
+
+    <p id="resultado" style="color: #ffd700; font-weight: bold; margin-top: 20px;"></p>
+</div>
+
+<a id="btn-voltar" href="index.html">VOLTAR PARA A PÁGINA INICIAL</a>
+
+<div id="rodape">
+    <p>Projeto Desenvolvimento Web - API 1: ViaCEP</p>
+</div>
+
+<script>
+function buscarCep() {
+    var cep = document.getElementById("cep").value;
+    document.getElementById("resultado").innerHTML = "Buscando...";
+
+    fetch("https://viacep.com.br/ws/" + cep + "/json/")
+        .then(function(resposta) {
+            return resposta.json();
+        })
+        .then(function(dados) {
+            document.getElementById("resultado").innerHTML = 
+                "Rua: " + dados.logradouro + "<br>" +
+                "Bairro: " + dados.bairro + "<br>" +
+                "Cidade: " + dados.localidade + " - " + dados.uf;
+        });
+}
+</script>
+
+</body>
+</html>
+

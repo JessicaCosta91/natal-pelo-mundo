@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Nova Iorque - Natal pelo Mundo</title>
+
+<link rel="stylesheet" href="estilo.css">
+
+<style>
+.lista-pontos {
+    font-size: 20px;
+    line-height: 1.8;
+    background-color: #072912;
+    padding: 20px 40px;
+    border-radius: 8px;
+}
+
+#btn-voltar {
+    display: inline-block;
+    background-color: white;
+    color: #8b0000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="cabecalho">
+    <!-- Nível 3: CSS Inline -->
+    <h1 style="font-style: italic; font-size: 50px; text-align: center; color: #8b0000;">
+        Nova Iorque - Estados Unidos
+    </h1>
+</div>
+
+<div style="text-align: center; margin: 40px;">
+    <img src="nova_iorque.jpg" alt="Natal em Nova Iorque">
+</div>
+
+<h2 class="titulo-secao">
+    O Cenário Cinematográfico do Natal
+</h2>
+
+<p class="texto-historia">
+    Nova Iorque é um dos destinos mais icônicos do mundo para passar o fim de ano, servindo de palco para dezenas de filmes clássicos de Natal. Em dezembro, a cidade ganha vitrines animadas, luzes gigantescas e a chance de presenciar nevascas que deixam os parques e avenidas ainda mais encantadores.
+</p>
+
+<h2 class="titulo-secao">
+    Principais Pontos Turísticos
+</h2>
+
+<ul class="lista-pontos">
+    <li><b>Rockefeller Center:</b> Famoso pela gigantesca árvore de Natal iluminada por milhares de lâmpadas e pela tradicional pista de patinação no gelo ao ar livre.</li>
+    <li><b>Quinta Avenida (Fifth Avenue):</b> Conhecida pelas lojas de luxo que montam vitrines temáticas e shows de luzes sincronizados com músicas natalinas.</li>
+    <li><b>Central Park:</b> O maior parque da cidade fica coberto de neve e oferece passeios de charrete e pistas de patinação com vista para os arranha-céus.</li>
+    <li><b>Bryant Park Winter Village:</b> Uma vila de inverno com dezenas de barraquinhas de artesanato, comidas típicas e entrada gratuita para patinar no gelo.</li>
+</ul>
+
+<div style="margin-top: 30px;">
+    <button class="botao-acao" onclick="mostrarDicaNY()">Ver dica para visitar o Rockefeller Center</button>
+    <p id="dica-ny" style="font-size: 20px; color: #ffd700; font-weight: bold; margin-top: 15px;"></p>
+</div>
+
+<a id="btn-voltar" href="index.html">VOLTAR PARA A PÁGINA INICIAL</a>
+
+<div id="rodape">
+    <p>Projeto Desenvolvimento Web - Destino: Nova Iorque, EUA</p>
+</div>
+
+<script>
+function mostrarDicaNY() {
+    document.getElementById("dica-ny").innerHTML = "Visite a árvore do Rockefeller Center bem cedo pela manhã ou depois das 22h para evitar as grandes multidões!";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Quebec - Natal pelo Mundo</title>
+
+<link rel="stylesheet" href="estilo.css">
+
+<style>
+.lista-pontos {
+    font-size: 20px;
+    line-height: 1.8;
+    background-color: #072912;
+    padding: 20px 40px;
+    border-radius: 8px;
+}
+
+#btn-voltar {
+    display: inline-block;
+    background-color: white;
+    color: #8b0000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="cabecalho">
+    <h1 style="font-style: italic; font-size: 50px; text-align: center; color: #8b0000;">
+        Quebec - Canadá
+    </h1>
+</div>
+
+<div style="text-align: center; margin: 40px;">
+    <img src="quebec.jpg" alt="Natal em Quebec">
+</div>
+
+<h2 class="titulo-secao">
+    Uma Vila Europeia na América do Norte
+</h2>
+
+<p class="texto-historia">
+    O centro histórico muralhado de Old Quebec ganha uma atmosfera mágica em dezembro, quando suas ruas estreitas e prédios de pedra ficam cobertos por uma espessa camada de neve. Com forte arquitetura de inspiração francesa, a cidade se transforma em uma autêntica vila natalina tradicional com iluminação festiva e músicas pelas praças.
+</p>
+
+<h2 class="titulo-secao">
+    Principais Pontos Turísticos
+</h2>
+
+<ul class="lista-pontos">
+    <li><b>Bairro Petit Champlain:</b> Uma das ruas comerciais mais antigas da América do Norte, repleta de lojinhas decoradas com pinheiros e luzes sob a neve.</li>
+    <li><b>Château Frontenac:</b> O hotel em estilo castelo mais fotografado do mundo, que recebe uma decoração especial e fica ao lado de um grande escorregador de gelo.</li>
+    <li><b>Mercado de Natal Alemão de Quebec:</b> Feira ao ar livre com chalés de madeira, artesanato local, salsichas tradicionais e vinho quente.</li>
+    <li><b>Place Royale:</b> Praça histórica onde fica instalada uma enorme árvore de Natal cercada por construções dos séculos XVII e XVIII.</li>
+</ul>
+
+<div style="margin-top: 30px;">
+    <button class="botao-acao" onclick="mostrarIdioma()">Curiosidade sobre o idioma em Quebec</button>
+    <p id="idioma-quebec" style="font-size: 20px; color: #ffd700; font-weight: bold; margin-top: 15px;"></p>
+</div>
+
+<a id="btn-voltar" href="index.html">VOLTAR PARA A PÁGINA INICIAL</a>
+
+<div id="rodape">
+    <p>Projeto Desenvolvimento Web - Destino: Quebec, Canadá</p>
+</div>
+
+<script>
+function mostrarIdioma() {
+    document.getElementById("idioma-quebec").innerHTML = "Em Quebec, o idioma oficial é o francês! Por lá, o Feliz Natal é desejado dizendo 'Joyeux Noël'.";
+}
+</script>
+
+</body>
+</html>

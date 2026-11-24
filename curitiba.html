@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Curitiba - Natal pelo Mundo</title>
+
+<link rel="stylesheet" href="estilo.css">
+
+<style>
+.lista-pontos {
+    font-size: 20px;
+    line-height: 1.8;
+    background-color: #072912;
+    padding: 20px 40px;
+    border-radius: 8px;
+}
+
+#btn-voltar {
+    display: inline-block;
+    background-color: white;
+    color: #8b0000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="cabecalho">
+    <h1 style="font-style: italic; font-size: 50px; text-align: center; color: #8b0000;">
+        Curitiba - Brasil
+    </h1>
+</div>
+
+<div style="text-align: center; margin: 40px;">
+    <img src="curitiba.jpg" alt="Natal de Curitiba">
+</div>
+
+<h2 class="titulo-secao">
+    A Capital Brasileira do Natal
+</h2>
+
+<p class="texto-historia">
+    Curitiba se consolidou como um dos maiores destinos natalinos do Brasil, realizando o tradicional "Natal de Curitiba - Luz dos Pinhais". Sem neve, mas com parques exuberantes e clima agradável de fim de ano, a capital paranaense reúne mais de cem atrações espalhadas por toda a cidade, unindo corais emocionantes, feiras gastronômicas e iluminação especial em seus cartões-postais.
+</p>
+
+<h2 class="titulo-secao">
+    Principais Pontos Turísticos
+</h2>
+
+<ul class="lista-pontos">
+    <li><b>Palácio Avenida:</b> O espetáculo mais tradicional da cidade, onde dezenas de crianças cantam músicas natalinas nas janelas do prédio histórico todo iluminado.</li>
+    <li><b>Rua XV de Novembro e Praça Santos Andrade:</b> Recebem feiras especiais de Natal, decoração aérea e a famosa roda-gigante iluminada no calçadão.</li>
+    <li><b>Jardim Botânico e Parque Barigui:</b> Ganham árvores de Natal gigantes, túneis de luzes e circuitos iluminados que podem ser percorridos a pé ou de carro.</li>
+    <li><b>Largo da Ordem:</b> O centro histórico recebe autos de Natal, apresentações musicais e o tradicional presépio em tamanho real.</li>
+</ul>
+
+<div style="margin-top: 30px;">
+    <button class="botao-acao" onclick="mostrarDicaCuritiba()">Ver dica sobre os ingressos em Curitiba</button>
+    <p id="dica-curitiba" style="font-size: 20px; color: #ffd700; font-weight: bold; margin-top: 15px;"></p>
+</div>
+
+<a id="btn-voltar" href="index.html">VOLTAR PARA A PÁGINA INICIAL</a>
+
+<div id="rodape">
+    <p>Projeto Desenvolvimento Web - Destino: Curitiba, Brasil</p>
+</div>
+
+<script>
+function mostrarDicaCuritiba() {
+    document.getElementById("dica-curitiba").innerHTML = "A grande maioria das apresentações do Natal de Curitiba é gratuita, mas alguns espetáculos em parques exigem agendamento prévio pela internet!";
+}
+</script>
+
+</body>
+</html>

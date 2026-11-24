@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Previsão do Tempo - Natal pelo Mundo</title>
+
+<link rel="stylesheet" href="estilo.css">
+
+<style>
+.caixa-api {
+    background-color: #072912;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+#btn-voltar {
+    display: inline-block;
+    background-color: white;
+    color: #8b0000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="cabecalho">
+    <h1 style="font-style: italic; font-size: 50px; text-align: center; color: #8b0000;">
+        Clima nos Destinos de Natal
+    </h1>
+</div>
+
+<h2 class="titulo-secao">
+    Veja a Temperatura Atual em Tempo Real
+</h2>
+
+<div class="caixa-api">
+    <p>Escolha uma cidade do roteiro:</p>
+    
+    <select id="cidade" style="padding: 10px; font-size: 18px;">
+        <option value="latitude=66.50&longitude=25.73">Rovaniemi (Finlândia)</option>
+        <option value="latitude=40.71&longitude=-74.00">Nova Iorque (EUA)</option>
+        <option value="latitude=48.57&longitude=7.75">Estrasburgo (França)</option>
+        <option value="latitude=46.81&longitude=-71.20">Quebec (Canadá)</option>
+        <option value="latitude=47.80&longitude=13.05">Salzburgo (Áustria)</option>
+        <option value="latitude=-29.37&longitude=-50.87">Gramado (Brasil)</option>
+        <option value="latitude=35.67&longitude=139.65">Tóquio (Japão)</option>
+        <option value="latitude=51.50&longitude=-0.12">Londres (Reino Unido)</option>
+        <option value="latitude=-25.42&longitude=-49.27">Curitiba (Brasil)</option>
+        <option value="latitude=28.53&longitude=-81.37">Orlando (EUA)</option>
+    </select>
+
+    <button type="button" class="botao-acao" onclick="verClima()">Consultar Clima</button>
+
+    <p id="resultado-clima" style="color: #ffd700; font-weight: bold; margin-top: 20px;"></p>
+</div>
+
+<a id="btn-voltar" href="index.html">VOLTAR PARA A PÁGINA INICIAL</a>
+
+<div id="rodape">
+    <p>Projeto Desenvolvimento Web - API 2: Open-Meteo</p>
+</div>
+
+<script>
+function verClima() {
+    var coords = document.getElementById("cidade").value;
+    document.getElementById("resultado-clima").innerHTML = "Consultando temperatura...";
+
+    var link = "https:" + "//api.open-meteo.com/v1/forecast?" + coords + "&current_weather=true&daily=temperature_2m_max,temperature_2m_min&timezone=auto";
+
+    fetch(link)
+        .then(function(resposta) {
+            return resposta.json();
+        })
+        .then(function(dados) {
+            var texto = "<b>Temperatura agora: " + dados.current_weather.temperature + " °C</b><br><br>";
+            texto += "<b>Previsão para os próximos 7 dias:</b><br>";
+
+            for (var i = 0; i < 7; i++) {
+                texto += "Data: " + dados.daily.time.at(i) + 
+                         " — Mín: " + dados.daily.temperature_2m_min.at(i) + "°C" +
+                         " | Máx: " + dados.daily.temperature_2m_max.at(i) + "°C<br>";
+            }
+
+            document.getElementById("resultado-clima").innerHTML = texto;
+        });
+}
+</script>
+
+
+
+</body>
+</html>

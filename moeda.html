@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Conversor de Moedas - Natal pelo Mundo</title>
+
+<link rel="stylesheet" href="estilo.css">
+
+<style>
+.caixa-api {
+    background-color: #072912;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+#btn-voltar {
+    display: inline-block;
+    background-color: white;
+    color: #8b0000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="cabecalho">
+    <h1 style="font-style: italic; font-size: 50px; text-align: center; color: #8b0000;">
+        Conversor de Moedas para Viagem
+    </h1>
+</div>
+
+<h2 class="titulo-secao">
+    Calcule o Orçamento da sua Viagem de Natal
+</h2>
+
+<div class="caixa-api">
+    <p>Digite o valor em Reais (R$) e escolha a moeda do destino:</p>
+    
+    <input type="number" id="valor" style="padding: 10px; font-size: 18px;" placeholder="Ex: 1000">
+
+    <select id="moeda" style="padding: 10px; font-size: 18px;">
+        <option value="USD">Dólar Americano (EUA)</option>
+        <option value="EUR">Euro (França / Finlândia / Áustria)</option>
+        <option value="GBP">Libra Esterlina (Reino Unido)</option>
+        <option value="CAD">Dólar Canadense (Canadá)</option>
+        <option value="JPY">Iene Japonês (Japão)</option>
+    </select>
+
+    <button type="button" class="botao-acao" onclick="converterMoeda()">Converter</button>
+
+    <p id="resultado-moeda" style="color: #ffd700; font-weight: bold; margin-top: 20px;"></p>
+</div>
+
+<a id="btn-voltar" href="index.html">VOLTAR PARA A PÁGINA INICIAL</a>
+
+<div id="rodape">
+    <p>Projeto Desenvolvimento Web - API 3: AwesomeAPI Cotações</p>
+</div>
+
+<script>
+function converterMoeda() {
+    var valor = document.getElementById("valor").value;
+    var moeda = document.getElementById("moeda").value;
+    document.getElementById("resultado-moeda").innerHTML = "Buscando cotação...";
+
+    var link = "https:" + "//economia.awesomeapi.com.br/json/last/" + moeda + "-BRL";
+
+    fetch(link)
+        .then(function(resposta) {
+            return resposta.json();
+        })
+        .then(function(dados) {
+            var cotacao = dados[moeda + "BRL"].bid;
+            var total = (valor / cotacao).toFixed(2);
+            document.getElementById("resultado-moeda").innerHTML = 
+                "Cotação hoje: R$ " + cotacao + "<br>" +
+                "Com R$ " + valor + " você terá: " + total + " " + moeda;
+        });
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Estrasburgo - Natal pelo Mundo</title>
+
+<link rel="stylesheet" href="estilo.css">
+
+<style>
+.lista-pontos {
+    font-size: 20px;
+    line-height: 1.8;
+    background-color: #072912;
+    padding: 20px 40px;
+    border-radius: 8px;
+}
+
+#btn-voltar {
+    display: inline-block;
+    background-color: white;
+    color: #8b0000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="cabecalho">
+    <h1 style="font-style: italic; font-size: 50px; text-align: center; color: #8b0000;">
+        Estrasburgo - França
+    </h1>
+</div>
+
+<div style="text-align: center; margin: 40px;">
+    <img src="estrasburgo.jpg" alt="Natal em Estrasburgo">
+</div>
+
+<h2 class="titulo-secao">
+    A Capital Oficial do Natal
+</h2>
+
+<p class="texto-historia">
+    Localizada na região da Alsácia, na fronteira com a Alemanha, Estrasburgo carrega o título oficial de "Capital do Natal". Suas ruas de paralelepípedos e casas históricas em estilo enxaimel ganham decorações gigantescas com ursos de pelúcia, laços vermelhos e luzes que costumam ficar cobertas de neve em dezembro.
+</p>
+
+<h2 class="titulo-secao">
+    Principais Pontos Turísticos
+</h2>
+
+<ul class="lista-pontos">
+    <li><b>Christkindelsmärik:</b> Realizado desde 1570, é o mercado de Natal mais antigo da França e um dos mais tradicionais de toda a Europa.</li>
+    <li><b>Praça Kléber:</b> O coração das festividades da cidade, onde fica instalada a gigantesca árvore de Natal de cerca de 30 metros de altura.</li>
+    <li><b>Bairro La Petite France:</b> Região histórica cortada por canais e pontes de pedra que ficam totalmente iluminadas durante o inverno.</li>
+    <li><b>Catedral de Notre-Dame de Estrasburgo:</b> Imponente igreja gótica que recebe feiras natalinas ao seu redor e presépios históricos em seu interior.</li>
+</ul>
+
+<!-- Ação em JavaScript da Página 4 -->
+<div style="margin-top: 30px;">
+    <button class="botao-acao" onclick="mostrarComida()">Ver prato típico dos mercados de Natal</button>
+    <p id="comida-estrasburgo" style="font-size: 20px; color: #ffd700; font-weight: bold; margin-top: 15px;"></p>
+</div>
+
+<a id="btn-voltar" href="index.html">VOLTAR PARA A PÁGINA INICIAL</a>
+
+<div id="rodape">
+    <p>Projeto Desenvolvimento Web - Destino: Estrasburgo, França</p>
+</div>
+
+<script>
+function mostrarComida() {
+    document.getElementById("comida-estrasburgo").innerHTML = "Nos mercados de Estrasburgo, experimente os Bredle (biscoitos amanteigados de Natal) e o Vin Chaud (vinho quente com especiarias)!";
+}
+</script>
+
+</body>
+</html>

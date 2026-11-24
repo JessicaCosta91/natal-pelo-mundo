@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Londres - Natal pelo Mundo</title>
+
+<link rel="stylesheet" href="estilo.css">
+
+<style>
+.lista-pontos {
+    font-size: 20px;
+    line-height: 1.8;
+    background-color: #072912;
+    padding: 20px 40px;
+    border-radius: 8px;
+}
+
+#btn-voltar {
+    display: inline-block;
+    background-color: white;
+    color: #8b0000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="cabecalho">
+    <h1 style="font-style: italic; font-size: 50px; text-align: center; color: #8b0000;">
+        Londres - Reino Unido
+    </h1>
+</div>
+
+<div style="text-align: center; margin: 40px;">
+    <img src="londres.jpg" alt="Natal em Londres">
+</div>
+
+<h2 class="titulo-secao">
+    Tradição Britânica e Megaeventos de Inverno
+</h2>
+
+<p class="texto-historia">
+    Embora a neve seja rara em dezembro na capital britânica, Londres compensa o frio úmido com uma das decorações natalinas mais elegantes do mundo. A cidade inteira se ilumina desde novembro, misturando a tradição dos corais nas praças históricas com grandes parques de diversões temáticos e pistas de patinação ao ar livre.
+</p>
+
+<h2 class="titulo-secao">
+    Principais Pontos Turísticos
+</h2>
+
+<ul class="lista-pontos">
+    <li><b>Hyde Park Winter Wonderland:</b> Um megaevento gratuito para entrar, com roda-gigante gigante, montanhas-russas, esculturas de gelo e mercados natalinos.</li>
+    <li><b>Oxford Street e Regent Street:</b> Famosas avenidas comerciais que recebem anjos luminosos gigantes suspensos sobre os icônicos ônibus vermelhos de dois andares.</li>
+    <li><b>Covent Garden:</b> Mercado histórico coberto que ganha bolas de Natal gigantes, visco iluminado e uma enorme árvore decorada na praça central.</li>
+    <li><b>Trafalgar Square:</b> Abriga todos os anos uma árvore de Natal de mais de 20 metros doada pela Noruega em agradecimento ao apoio britânico na Segunda Guerra.</li>
+</ul>
+
+<div style="margin-top: 30px;">
+    <button class="botao-acao" onclick="mostrarCuriosidadeLondres()">Ver curiosidade da árvore de Trafalgar Square</button>
+    <p id="curiosidade-londres" style="font-size: 20px; color: #ffd700; font-weight: bold; margin-top: 15px;"></p>
+</div>
+
+<a id="btn-voltar" href="index.html">VOLTAR PARA A PÁGINA INICIAL</a>
+
+<div id="rodape">
+    <p>Projeto Desenvolvimento Web - Destino: Londres, Reino Unido</p>
+</div>
+
+<script>
+function mostrarCuriosidadeLondres() {
+    document.getElementById("curiosidade-londres").innerHTML = "Desde 1947, a cidade de Oslo, na Noruega, envia todos os anos um pinheiro gigante de presente para iluminar a Trafalgar Square em Londres!";
+}
+</script>
+
+</body>
+</html>

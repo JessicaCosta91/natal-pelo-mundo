@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Guia de Viagens de Natal</title>
+
+<link rel="stylesheet" href="estilo.css">
+
+<style>
+li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+li a {
+    display: inline-block;
+    background-color: white;
+    color: #8b0000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 4px solid white;
+    border-radius: 7px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.sino {
+    width: 250px;
+    border: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 30px;
+    animation: balancar 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes balancar {
+    0% {
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(20deg);
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="cabecalho">
+    <h1 style="font-style: italic; font-size: 55px; text-align: center; color: #8b0000;">
+        A Magia do Natal pelo Mundo
+    </h1>
+</div>
+
+<div style="text-align: center; margin: 40px;">
+    <img src="sino.jpg" class="sino" alt="Sino de Natal">
+    <img src="natal.jpg" alt="Imagem de Natal" style="vertical-align: middle;">
+    <img src="sino.jpg" class="sino" alt="Sino de Natal">
+</div>
+
+
+<h2 class="titulo-secao">
+    A História do Natal
+</h2>
+
+<p class="texto-historia">
+    O Natal é uma das celebrações mais antigas e importantes do mundo, comemorada todos os anos no dia 25 de dezembro. Sua origem está ligada à celebração cristã do nascimento de Jesus Cristo em Belém, mas ao longo dos séculos a data também incorporou tradições culturais de inverno do hemisfério norte, como a decoração de pinheiros com luzes, a troca de presentes e as ceias em família.
+</p>
+
+<p class="texto-historia">
+    A figura do Papai Noel foi inspirada em São Nicolau, um bispo generoso que viveu no século IV e tinha o costume de ajudar os mais necessitados deixando moedas e presentes em segredo. Hoje, o espírito natalino transforma cidades inteiras em cenários encantados, atraindo viajantes do mundo todo em busca de neve, espetáculos de luzes e mercados tradicionais.
+</p>
+
+<div style="margin-top: 30px; margin-bottom: 50px;">
+    <button class="botao-acao" onclick="mostrarMensagem()">Clique para ver uma curiosidade de Natal</button>
+    <p id="curiosidade" style="font-size: 20px; color: #ffd700; font-weight: bold; margin-top: 15px;"></p>
+</div>
+
+<h2 style="text-decoration: underline; font-size: 28px; color: #ffd700;">As 10 Melhores Cidades Para Você e Sua Família Curtirem o Natal!</h2>
+
+<h2 style="text-decoration: underline; font-size: 22px;">Conheça a terra oficial do Papai Noel na Finlândia:</h2>
+<li><a href="rovaniemi.html">ROVANIEMI</a></li>
+
+<h2 style="text-decoration: underline; font-size: 22px;">Veja o cenário natalino de cinema nos Estados Unidos:</h2>
+<li><a href="nova_iorque.html">NOVA IORQUE</a></li>
+
+<h2 style="text-decoration: underline; font-size: 22px;">Visite a Capital do Natal na França:</h2>
+<li><a href="estrasburgo.html">ESTRASBURGO</a></li>
+
+<h2 style="text-decoration: underline; font-size: 22px;">Explore o centro histórico nevado no Canadá:</h2>
+<li><a href="quebec.html">QUEBEC</a></li>
+
+<h2 style="text-decoration: underline; font-size: 22px;">Encante-se com o Natal nos Alpes da Áustria:</h2>
+<li><a href="salzburgo.html">SALZBURGO</a></li>
+
+<h2 style="text-decoration: underline; font-size: 22px;">Descubra o maior Natal do Brasil na Serra Gaúcha:</h2>
+<li><a href="gramado.html">GRAMADO</a></li>
+
+<h2 style="text-decoration: underline; font-size: 22px;">Veja os shows de luzes modernos no Japão:</h2>
+<li><a href="toquio.html">TÓQUIO</a></li>
+
+<h2 style="text-decoration: underline; font-size: 22px;">Passeie pelos mercados de inverno no Reino Unido:</h2>
+<li><a href="londres.html">LONDRES</a></li>
+
+<h2 style="text-decoration: underline; font-size: 22px;">Encante-se com a Capital do Natal no Paraná:</h2>
+<li><a href="curitiba.html">CURITIBA</a></li>
+
+<h2 style="text-decoration: underline; font-size: 22px;">Viva a magia dos parques temáticos na Flórida:</h2>
+<li><a href="orlando.html">ORLANDO</a></li>
+
+<h2 style="text-decoration: underline; font-size: 28px; color: #ffd700; margin-top: 40px;">Planeje Sua Viagem!</h2>
+
+<h2 style="text-decoration: underline; font-size: 22px;">Dicas essenciais para sua viagem de fim de ano:</h2>
+<li><a href="dicas_viagem.html">DICAS DE VIAGEM</a></li>
+
+<h2 style="text-decoration: underline; font-size: 22px;">Consulte o endereço do seu hotel ou origem pelo CEP:</h2>
+<li><a href="cep.html">BUSCAR CEP</a></li>
+
+<h2 style="text-decoration: underline; font-size: 22px;">Veja a temperatura atual nos destinos de Natal:</h2>
+<li><a href="clima.html">PREVISÃO DO TEMPO</a></li>
+
+<h2 style="text-decoration: underline; font-size: 22px;">Calcule o orçamento da sua viagem em Dólar ou Euro:</h2>
+<li><a href="moeda.html">CONVERSOR DE MOEDAS</a></li>
+
+
+<div id="rodape">
+    <p>Projeto Desenvolvimento Web - Tema: Natal pelo Mundo</p>
+</div>
+
+<script>
+function mostrarMensagem() {
+    document.getElementById("curiosidade").innerHTML = "Você sabia? A primeira árvore de Natal decorada com luzes elétricas foi criada em 1882, em Nova Iorque!";
+}
+</script>
+
+</body>
+</html>

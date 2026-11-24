@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Orlando - Natal pelo Mundo</title>
+
+<link rel="stylesheet" href="estilo.css">
+
+<style>
+.lista-pontos {
+    font-size: 20px;
+    line-height: 1.8;
+    background-color: #072912;
+    padding: 20px 40px;
+    border-radius: 8px;
+}
+
+#btn-voltar {
+    display: inline-block;
+    background-color: white;
+    color: #8b0000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="cabecalho">
+    <h1 style="font-style: italic; font-size: 50px; text-align: center; color: #8b0000;">
+        Orlando - Estados Unidos
+    </h1>
+</div>
+
+<div style="text-align: center; margin: 40px;">
+    <img src="orlando.jpg" alt="Natal nos parques de Orlando">
+</div>
+
+<h2 class="titulo-secao">
+    Magia Natalina sob o Sol da Flórida
+</h2>
+
+<p class="texto-historia">
+    Para quem quer viver toda a fantasia do Natal sem precisar enfrentar o frio rigoroso, Orlando é o destino perfeito. Com clima agradável e ensolarado em dezembro, a cidade atrai famílias do mundo inteiro com as celebrações especiais dos complexos da Disney e da Universal, que transformam seus parques com paradas temáticas, fogos de artifício e até neve artificial.
+</p>
+
+<h2 class="titulo-secao">
+    Principais Pontos Turísticos
+</h2>
+
+<ul class="lista-pontos">
+    <li><b>Magic Kingdom (Walt Disney World):</b> Recebe o Castelo da Cinderela iluminado, desfiles especiais de Natal com personagens vestidos a caráter e neve artificial caindo na Main Street.</li>
+    <li><b>Universal Studios e Islands of Adventure:</b> Destaque para a área de Harry Potter decorada para o inverno e para os shows natalinos do Grinch na área Seuss Landing.</li>
+    <li><b>Disney Springs:</b> Complexo de compras e restaurantes ao ar livre que promove uma trilha gratuita de dezenas de árvores de Natal temáticas.</li>
+    <li><b>Gaylord Palms Resort (ICE!):</b> Famoso hotel que monta todos os anos uma exposição gigante de esculturas feitas em gelo colorido com temas natalinos.</li>
+</ul>
+
+<div style="margin-top: 30px;">
+    <button class="botao-acao" onclick="mostrarClimaOrlando()">Ver temperatura média em Orlando no Natal</button>
+    <p id="clima-orlando" style="font-size: 20px; color: #ffd700; font-weight: bold; margin-top: 15px;"></p>
+</div>
+
+<a id="btn-voltar" href="index.html">VOLTAR PARA A PÁGINA INICIAL</a>
+
+<div id="rodape">
+    <p>Projeto Desenvolvimento Web - Destino: Orlando, EUA</p>
+</div>
+
+<script>
+function mostrarClimaOrlando() {
+    document.getElementById("clima-orlando").innerHTML = "Em dezembro, Orlando costuma ter dias ensolarados com temperaturas agradáveis entre 15°C e 23°C, ideal para passear com roupas leves durante o dia!";
+}
+</script>
+
+</body>
+</html>

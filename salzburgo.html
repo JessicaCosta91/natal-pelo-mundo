@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Salzburgo - Natal pelo Mundo</title>
+
+<link rel="stylesheet" href="estilo.css">
+
+<style>
+.lista-pontos {
+    font-size: 20px;
+    line-height: 1.8;
+    background-color: #072912;
+    padding: 20px 40px;
+    border-radius: 8px;
+}
+
+#btn-voltar {
+    display: inline-block;
+    background-color: white;
+    color: #8b0000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="cabecalho">
+    <h1 style="font-style: italic; font-size: 50px; text-align: center; color: #8b0000;">
+        Salzburgo - Áustria
+    </h1>
+</div>
+
+<div style="text-align: center; margin: 40px;">
+    <img src="salzburgo.jpg" alt="Natal em Salzburgo">
+</div>
+
+<h2 class="titulo-secao">
+    Música Clássica e Neve nos Alpes
+</h2>
+
+<p class="texto-historia">
+    Cercada pelas montanhas nevadas dos Alpes austríacos, Salzburgo é a cidade natal do compositor Mozart e celebra o fim de ano com uma atmosfera histórica e musical. Seus mercados centenários de Advento atraem visitantes com corais ao vivo, luzes douradas e aromas de castanhas assadas e biscoitos de gengibre.
+</p>
+
+<h2 class="titulo-secao">
+    Principais Pontos Turísticos
+</h2>
+
+<ul class="lista-pontos">
+    <li><b>Salzburger Christkindlmarkt:</b> Um dos mercados de Natal mais antigos do mundo, realizado desde o século XV nas praças ao redor da catedral.</li>
+    <li><b>Fortaleza de Hohensalzburg:</b> Castelo medieval no topo de uma colina coberta de neve, que abriga um mercado natalino especial em seu pátio interno.</li>
+    <li><b>Capela de Noite Feliz (Oberndorf):</b> Localizada nos arredores da cidade, onde a famosa canção natalina "Noite Feliz" (Silent Night) foi tocada pela primeira vez em 1818.</li>
+    <li><b>Rua Getreidegasse:</b> Famosa rua comercial do centro histórico, decorada com letreiros de ferro forjado e luzes de inverno.</li>
+</ul>
+
+<div style="margin-top: 30px;">
+    <button class="botao-acao" onclick="mostrarMusica()">Curiosidade musical de Salzburgo</button>
+    <p id="musica-salzburgo" style="font-size: 20px; color: #ffd700; font-weight: bold; margin-top: 15px;"></p>
+</div>
+
+<a id="btn-voltar" href="index.html">VOLTAR PARA A PÁGINA INICIAL</a>
+
+<div id="rodape">
+    <p>Projeto Desenvolvimento Web - Destino: Salzburgo, Áustria</p>
+</div>
+
+<script>
+function mostrarMusica() {
+    document.getElementById("musica-salzburgo").innerHTML = "A canção de Natal mais famosa do mundo, 'Noite Feliz', nasceu pertinho de Salzburgo na véspera de Natal de 1818!";
+}
+</script>
+
+</body>
+</html>

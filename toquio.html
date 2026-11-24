@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Tóquio - Natal pelo Mundo</title>
+
+<!-- Nível 1: CSS Externo -->
+<link rel="stylesheet" href="estilo.css">
+
+<!-- Nível 2: CSS Interno -->
+<style>
+.lista-pontos {
+    font-size: 20px;
+    line-height: 1.8;
+    background-color: #072912;
+    padding: 20px 40px;
+    border-radius: 8px;
+}
+
+#btn-voltar {
+    display: inline-block;
+    background-color: white;
+    color: #8b0000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="cabecalho">
+    <!-- Nível 3: CSS Inline -->
+    <h1 style="font-style: italic; font-size: 50px; text-align: center; color: #8b0000;">
+        Tóquio - Japão
+    </h1>
+</div>
+
+<div style="text-align: center; margin: 40px;">
+    <img src="toquio.jpg" alt="Iluminações de Natal em Tóquio">
+</div>
+
+<h2 class="titulo-secao">
+    Espetáculos Tecnológicos de Luzes
+</h2>
+
+<p class="texto-historia">
+    Embora raramente neve na região urbana de Tóquio em dezembro, a capital japonesa se transforma em um verdadeiro festival futurista de luzes. A cidade aposta em milhões de lâmpadas de LED sincronizadas com música, túneis iluminados e mercados inspirados nas tradições europeias, criando um visual moderno e inesquecível. Além disso, o Natal é uma celebração mais comercial e romântica do que religiosa, não sendo um feriado nacional. O dia 25 de dezembro é um dia útil comum, com comércio, trens e atrações funcionando normalmente. 
+</p>
+
+<h2 class="titulo-secao">
+    Principais Pontos Turísticos
+</h2>
+
+<ul class="lista-pontos">
+    <li><b>Roppongi Hills Keyakizaka:</b> Uma avenida arborizada que recebe cerca de 800 mil luzes brancas e azuladas com vista direta para a Torre de Tóquio iluminada.</li>
+    <li><b>Shibuya Blue Cave (Ao no Dokutsu):</b> Um corredor de árvores totalmente coberto por luzes azuis intensas que refletem no chão como um rio luminoso.</li>
+    <li><b>Marunouchi Illumination:</b> Mais de um quilômetro de ruas próximas à Estação de Tóquio decoradas com luzes douradas em tom champanhe.</li>
+    <li><b>Mercado de Natal de Tóquio (Meiji Jingu Gaien):</b> Feira inspirada nos mercados alemães com uma pirâmide de madeira gigante e comidas típicas.</li>
+</ul>
+
+<!-- Ação em JavaScript da Página 8 -->
+<div style="margin-top: 30px;">
+    <button class="botao-acao" onclick="mostrarTradicaoJapao()">Curiosidade sobre o Natal no Japão</button>
+    <p id="tradicao-toquio" style="font-size: 20px; color: #ffd700; font-weight: bold; margin-top: 15px;"></p>
+</div>
+
+<a id="btn-voltar" href="index.html">VOLTAR PARA A PÁGINA INICIAL</a>
+
+<div id="rodape">
+    <p>Projeto Desenvolvimento Web - Destino: Tóquio, Japão</p>
+</div>
+
+<script>
+function mostrarTradicaoJapao() {
+    document.getElementById("tradicao-toquio").innerHTML = "No Japão, o Natal é celebrado como uma data romântica para casais, e duas tradições muito populares são comer bolo de morango e frango frito!";
+}
+</script>
+
+</body>
+</html>

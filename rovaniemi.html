@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Rovaniemi - Natal pelo Mundo</title>
+
+<link rel="stylesheet" href="estilo.css">
+
+<style>
+.lista-pontos {
+    font-size: 20px;
+    line-height: 1.8;
+    background-color: #072912;
+    padding: 20px 40px;
+    border-radius: 8px;
+}
+
+#btn-voltar {
+    display: inline-block;
+    background-color: white;
+    color: #8b0000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="cabecalho">
+    <h1 style="font-style: italic; font-size: 50px; text-align: center; color: #8b0000;">
+        Rovaniemi - Finlândia
+    </h1>
+</div>
+
+<div style="text-align: center; margin: 40px;">
+    <img src="rovaniemi.jpg" alt="Vila do Papai Noel em Rovaniemi">
+</div>
+
+<h2 class="titulo-secao">
+    A Terra Oficial do Papai Noel
+</h2>
+
+<p class="texto-historia">
+    Localizada na região da Lapônia, bem na linha do Círculo Polar Ártico, Rovaniemi é mundialmente reconhecida como a residência oficial do Papai Noel. Durante o mês de dezembro, a cidade fica completamente coberta por uma espessa camada de neve, criando o cenário perfeito de conto de fadas para quem deseja viver o inverno europeu.
+</p>
+
+<h2 class="titulo-secao">
+    Principais Pontos Turísticos
+</h2>
+
+<ul class="lista-pontos">
+    <li><b>Vila do Papai Noel (Santa Claus Village):</b> Onde os visitantes podem conhecer o Bom Velhinho pessoalmente todos os dias do ano e enviar cartas com o carimbo oficial do Ártico.</li>
+    <li><b>Linha do Círculo Polar Ártico:</b> Uma linha marcada no chão da vila que permite aos turistas atravessar oficialmente para a zona ártica.</li>
+    <li><b>Passeios de Trenó com Renas e Huskies:</b> Trilhas guiadas pelas florestas nevadas da Lapônia em trenós tradicionais.</li>
+    <li><b>Observação da Aurora Boreal:</b> Espetáculo natural de luzes verdes e roxas no céu noturno durante os meses de inverno.</li>
+</ul>
+
+
+<div style="margin-top: 30px;">
+    <button class="botao-acao" onclick="verTemperatura()">Ver temperatura média em Dezembro</button>
+    <p id="info-clima" style="font-size: 20px; color: #ffd700; font-weight: bold; margin-top: 15px;"></p>
+</div>
+
+<a id="btn-voltar" href="index.html">VOLTAR PARA A PÁGINA INICIAL</a>
+
+<div id="rodape">
+    <p>Projeto Desenvolvimento Web - Destino: Rovaniemi, Finlândia</p>
+</div>
+
+<script>
+function verTemperatura() {
+    document.getElementById("info-clima").innerHTML = "Em dezembro, as temperaturas em Rovaniemi variam entre -8°C e -15°C. Prepare roupas térmicas para enfrentar o frio intenso e se encantar com a neve!";
+}
+</script>
+
+</body>
+</html>
